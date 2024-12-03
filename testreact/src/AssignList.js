@@ -10,7 +10,8 @@ const AssignList = (props) => {
           padding: 8,
         }}
       >
-        {title}
+        {" "}
+        {title}{" "}
       </h3>
       {assign.map((blog) => (
         <div className="blog-preview" key={blog.id}>
