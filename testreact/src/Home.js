@@ -1,18 +1,24 @@
 import { useState } from "react";
+import AssignList from "./AssignList";
 
 const Home = () => {
   const [blogs, setBlogs] = useState([
     {
-      title: "My favourite website",
+      title: "Nudging",
       body: "lorem ipsum...",
-      author: "Mario",
+      skill: "Watching",
       id: 1,
     },
-    { title: "Best ever!", body: "lorem ipsum...", author: "Yoshi", id: 2 },
     {
-      title: "Unbeatable",
+      title: "Why you Procrastinate",
       body: "lorem ipsum...",
-      author: "Pippa",
+      skill: "Reading",
+      id: 2,
+    },
+    {
+      title: "The Power of Silence",
+      body: "lorem ipsum...",
+      skill: "Listening",
       id: 3,
     },
   ]);
@@ -21,17 +27,10 @@ const Home = () => {
       <h3
         style={{
           color: "blue",
+          padding: 8,
         }}
-      >
-        Reviews
-      </h3>
-
-      {blogs.map((blog) => (
-        <div className="blog-preview" key={blog.id}>
-          <h2>{blog.title}</h2>
-          <p>Written by {blog.author}</p>
-        </div>
-      ))}
+      ></h3>
+      <AssignList assign={blogs} title="Assignments" />
     </div>
   );
 };

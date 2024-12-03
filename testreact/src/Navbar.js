@@ -8,13 +8,13 @@ const Navbar = () => {
           style={{
             color: "white",
             backgroundColor: "#f1356d",
-            borderRadius: "8",
+            borderRadius: "40px",
             padding: 10,
           }}
         >
           Home
         </a>
-        <a href="/">Reading</a>
+        <a href="src/reading.js">Reading</a>
         <a href="/">Writing</a>
         <a href="/">Watching</a>
         <a href="/">Listening</a>
